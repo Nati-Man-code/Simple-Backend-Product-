@@ -2,7 +2,6 @@ const asyncHandler = require("express-async-handler");
 const { register, login, getProfile } = require("../controllers/userController");
 const express = require("express");
 const router = express.Router();
-const User = require("../models/userModel");
 const ProductControllers = require("../controllers/ProductControllers");
 const { productValidator } = require("../middleware/ProductValidator");
 const { adminValidator } = require("../middleware/adminValidator");
