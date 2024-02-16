@@ -1,10 +1,14 @@
 const express = require("express");
 const dotenv = require("dotenv").config(); // process.env
 const connectDB = require("./config/db");
-const port = process.env.PORT;
+const ProductsRoutes = require("./routes/ProductsRoutes");
+const UsersRoutes = require("./routes/UsersRoutes");
+const port = process.env.PORT || 5000;
+
 connectDB();
 
 const app = express();
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
