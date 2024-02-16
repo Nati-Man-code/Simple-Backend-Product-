@@ -58,7 +58,6 @@ const deleteProduct = async (req, res) => {
   await product.remove();
   res.status(200).json({ id: req.params.id });
 };
-
 module.exports = {
   getAllProducts,
   getProducts,
