@@ -7,7 +7,6 @@ const ProductControllers = require("../controllers/ProductControllers");
 const { productValidator } = require("../middleware/ProductValidator");
 const { adminValidator } = require("../middleware/adminValidator");
 const { protect } = require("../middleware/authMiddleware");
-const {getAllProducts, getProducts, createProduct, updateProduct, deleteProduct} = require("../controllers/ProductControllers")
 const {
   getAllProducts,
   getProducts,
