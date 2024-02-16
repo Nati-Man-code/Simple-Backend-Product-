@@ -18,6 +18,7 @@ router
   .post(protect, productValidator, createProduct);
 router.route("/:id").put(protect, updateProduct).delete(protect, deleteProduct);
 
+
 // for admin
 router.get("/getAllProducts", protect, adminValidator, getAllProducts);
 

@@ -1,3 +1,5 @@
+const  User = require("../model/userModel");
+const joi = require("joi");
 const asyncHandler = require("express-async-handler");
 const Product = require("../model/ProductModel");
 
