@@ -1,9 +1,12 @@
 const asyncHandler = require("express-async-handler");
+const { register, login, getProfile } = require("../controllers/userController");
 const express = require("express");
 const router = express.Router();
+const User = require("../models/userModel");
 const { productValidator } = require("../middleware/ProductValidator");
 const { adminValidator } = require("../middleware/adminValidator");
 const { protect } = require("../middleware/authMiddleware");
+const {getAllProducts, getProducts, createProduct, updateProduct, deleteProduct} = require("../controllers/ProductControllers")
 const {
   getAllProducts,
   getProducts,
