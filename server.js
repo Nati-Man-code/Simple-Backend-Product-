@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const productRouter = require('./routes/productRoutes')
+const productRouter = require('./routes/ProductsRoutes')
 const userRouter = require('./routes/userRoutes')
 
 app.use("/api/products", productRouter);
