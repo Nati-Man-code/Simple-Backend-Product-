@@ -20,3 +20,8 @@ router.route("/:id").put(protect, updateProduct).delete(protect, deleteProduct);
 // for admin
 router.get("/getAllProducts", protect, adminValidator, getAllProducts);
 
+module.exports = router;
+
+
+
+
